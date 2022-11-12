@@ -1,0 +1,76 @@
+.Banking__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.banking__cart {
+  max-width: 350px;
+  text-align: center;
+  padding: 12px;
+}
+.bank--cart__h3 {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 18px;
+  letter-spacing: -0.138462px;
+  color: #36536b;
+}
+.bank--cart__p {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.115385px;
+  color: #6c8294;
+  margin-bottom: 50px;
+}
+@media (max-width: 1026px) {
+  .bank--cart__h3 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 775px) {
+  .Banking__box {
+    display: flex;
+    flex-direction: column;
+    margin-top: -40px;
+  }
+}
+.ready__cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+.ready__h2 {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #36536b;
+}
+@media (max-width: 870px) {
+  .ready__cart {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+  }
+  .ready__h2 {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 355px) {
+  .ready__h2 {
+    font-size: 35px;
+  }
+}
