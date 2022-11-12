@@ -5,3 +5,13 @@
 @import "./sections/code";
 @import "./sections/cart";
 @import "./sections/footer";
+@import "./normalize";
+.wiraper__2 {
+  background-image: url("../imgs/bitmalift.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+@media (max-width: 400px) {
+  .wiraper__2 {
+  }
+}

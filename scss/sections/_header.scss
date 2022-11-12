@@ -1,5 +1,18 @@
 body {
   background: #edf3f8;
+  // position: absolute;
+}
+.wirapir {
+  background-image: url("../imgs/Bitmap.svg");
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  .wirapir {
+    max-width: 100%;
+    background-image: url("../imgs/bitmamobil.svg");
+    background-position: top center;
+  }
 }
 .header__box {
   display: flex;
@@ -15,6 +28,7 @@ body {
 }
 .nav__loga {
   margin-top: 40px;
+  margin-right: 60px;
 }
 .nav__txet {
   display: none;
@@ -56,29 +70,6 @@ body {
 .hamburgiy {
   display: none;
 }
-// .hambuergir {
-//   display: block;
-//   width: 35px;
-//   height: 35px;
-//   cursor: pointer;
-
-//   appearance: none;
-
-//   background: none;
-//   outline: none;
-//   border: none;
-// }
-// .hambuergir .bar,
-// .hambuergir:after,
-// .hambuergir:before {
-//   content: "";
-//   display: block;
-//   width: 100%;
-//   height: 5%;
-//   background-color: white;
-//   margin: 6px 0px;
-//   transition: 0.4s;
-// }
 .start__box {
   display: flex;
   align-items: center;
@@ -146,7 +137,7 @@ body {
   max-width: 100%;
   height: 800px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1450px) {
   .cart--text__h1 {
     font-size: 45px;
   }
@@ -158,7 +149,7 @@ body {
     max-width: 100%;
   }
 }
-@media (max-width: 860px) {
+@media (max-width: 988px) {
   .cart--text__h1 {
     font-size: 72px;
   }
@@ -199,12 +190,12 @@ body {
     width: 100%;
     margin-left: 0.4%;
   }
-  .nav__txet {
-    display: none;
-  }
-  .nav__href {
-    display: none;
-  }
+  // .nav__txet {
+  //   display: none;
+  // }
+  // .nav__href {
+  //   display: none;
+  // }
   .hamburgiy {
     display: block;
     margin-top: 40px;
@@ -228,4 +219,52 @@ body {
   }
 }
 @media (max-width: 350px) {
+}
+
+// menu-bar
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header__clos {
+  display: none;
+}
+
+@media screen and(max-width:670px) {
+  .wrapper {
+    // display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    background: #1b262f;
+    transform: translate(150%);
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    z-index: 10;
+    transition: all 0.3s linear;
+  }
+  .header__clos {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+  }
+
+  .nav__cart {
+    justify-content: center;
+  }
+
+  .nav__txet {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.wrapper-active {
+  transform: translate(0);
 }
